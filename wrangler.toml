@@ -1,3 +1,7 @@
 name = "sveltia-cms-auth"
 main = "src/index.js"
 compatibility_date = "2023-03-24"
+
+# Seul le portfolio peut obtenir un jeton via ce Worker (anti-abus et sécurité).
+[vars]
+ALLOWED_DOMAINS = "portfolio-sharn.pages.dev"
